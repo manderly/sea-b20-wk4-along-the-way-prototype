@@ -1,0 +1,28 @@
+html { 
+  height: 100% 
+}
+
+h2 {
+  color:blue;
+}
+body {
+  margin:20px auto;
+  height:80%;
+  width:50%;
+}
+
+ul li {
+  display:inline;
+  padding:10px;
+  background-color:#ddd;
+  margin:10px;
+}
+
+li:hover {
+  cursor:pointer;
+  background-color:#eee;
+}
+
+#map-canvas {
+  height: 100%;
+}
