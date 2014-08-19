@@ -1,3 +1,5 @@
+/* 
+
 function initialize() {
   var mapOptions = {
     zoom: 16,
@@ -16,4 +18,4 @@ function loadScript() {
   document.body.appendChild(script);
 }
 
-window.onload = loadScript;
+window.onload = loadScript; */
