@@ -22,7 +22,7 @@ var app = express();
 
 
   app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/app/index.html');
+    res.sendFile(__dirname + '/app/onepage.html');
   });
 
 
