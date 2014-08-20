@@ -8,6 +8,18 @@ var app = express();
 
   app.use(express.static(__dirname + '/'));
 
+  app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/app/onepage.html');
+  });
+
+
+var server = http.createServer(app);
+
+server.listen(3000, function() {
+  console.log('server runnning on port 3000');
+});
+
+
   // app.get('/home', function(req, res) {
   //   res.sendFile(__dirname + '/app/partials/home.html');
   // });
@@ -19,15 +31,3 @@ var app = express();
   // app.get('/map', function(req, res) {
   //   res.sendFile(__dirname + '/app/partials/map.html');
   // });
-
-
-  app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/app/onepage.html');
-  });
-
-
-var server = http.createServer(app);
-
-server.listen(3000, function() {
-  console.log('server runnning on port 3000');
-});
